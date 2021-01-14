@@ -1,0 +1,16 @@
+{
+  "name": "Selection and clipboard for Mojim"
+  ,"version": "1.0"
+  ,"description": "Enables selection and clipboard functions on mojim.com"
+  ,"manifest_version": 3
+  ,"content_scripts": [
+     {
+       "matches": ["https://mojim.com/*"]
+       ,"css": ["select.css"]
+       ,"js": ["injector.js"]
+     }
+   ]
+  ,"web_accessible_resources":[
+    "clipboard.js"
+  ]
+}
